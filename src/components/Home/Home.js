@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import TopWindow from '../TopWindow/TopWindow'
 import AboutMeWindow from '../AboutMe/AboutMeWindow'
 import SkillWindow from '../SkillWindow/SkillWindow'
-import ThirdWindow from '../ThirdWindow/ThirdWindow'
+import Projects from '../Projects/Projects'
 class Home extends Component {
 
 
@@ -12,9 +12,10 @@ class Home extends Component {
             <div>
                <TopWindow />
                <AboutMeWindow />
+               <Projects />
                <SkillWindow />
-               <ThirdWindow />
         </div>
+
         )
     }
 }

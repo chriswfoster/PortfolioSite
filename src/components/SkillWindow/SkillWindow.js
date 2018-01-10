@@ -15,7 +15,8 @@ export default class SecondWindow extends Component {
     render(){
         return(
             <div className="secondwindow">
-                SKILLs:
+            <br />
+               <h1> SKILLs: </h1>
 
 
 

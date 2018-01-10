@@ -15,8 +15,8 @@ export default class AboutMe extends Component {
         slowerScrollRate
         tag="figure"
       >
-       <div> Full Stack Web Developer with React library, Redux, Router, AngularJS, Node/Express, Socket.io, SQL/PostgreSQL,
-and REST experience. Transferring from an IT background into Web Development.</div>
+       <h1>Full Stack Web Developer with React library, Redux, Router, AngularJS, Node/Express, Socket.io, SQL/PostgreSQL,
+and REST experience. Transferring from an IT background into Web Development.</h1>
       </Parallax>
      
     )
