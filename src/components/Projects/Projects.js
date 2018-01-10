@@ -20,10 +20,13 @@ export default class Projects extends Component {
             duration="1"
             animateOut="slideOutLeft"
           >
-            <a href="http://dream.chriswf.com"   style={{ textDecoration: "none", color: "white" }}>
+            <a
+              href="http://dream.chriswf.com"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               <img
                 src={require("./DreamScreenshot.png")}
-                className="projectpictiles" 
+                className="projectpictiles"
               />
               <h2>Dream Notes</h2>
             </a>
@@ -51,7 +54,10 @@ export default class Projects extends Component {
             duration="1"
             animateOut="slideOutRight"
           >
-            <a href="http://q2.devmountain.review"   style={{ textDecoration: "none", color: "white" }}>
+            <a
+              href="http://q2.devmountain.review"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               <img
                 src={require("./QueueScreenshot.png")}
                 className="projectpictiles"
