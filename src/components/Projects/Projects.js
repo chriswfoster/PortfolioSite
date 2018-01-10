@@ -26,6 +26,19 @@ export default class Projects extends Component {
             />
             <h2>Dream Notes</h2>
           </ScrollAnimation>
+
+          <ScrollAnimation
+            animateIn="slideInUp"
+            duration="1"
+            animateOut="slideOutDown"
+          >
+            <img
+              src={require("./GiphyScreenshot.png")}
+              className="projectpictiles"
+            />
+            <h2>Giphy Search Tool (React Variant)</h2>
+          </ScrollAnimation>
+
           <ScrollAnimation
             animateIn="slideInRight"
             duration="1"
