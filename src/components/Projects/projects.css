@@ -7,7 +7,46 @@
   display: block;
 }
 
-
 .fadeinprojects {
-  
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projectpictiles {
+  max-height: 200px;
+}
+.projectpictiles:hover {
+  border-style: solid;
+  border-color: rgb(25, 0, 255);
+}
+.projecttilesflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }

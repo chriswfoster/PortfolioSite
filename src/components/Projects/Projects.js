@@ -1,16 +1,42 @@
 import React, { Component } from "react"
 import "./projects.css"
-import ScrollAnimation from 'react-animate-on-scroll'
-
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 export default class Projects extends Component {
   render() {
     return (
       <div className="thirdwindow">
-        <br/>
+        <br />
         <div>
-        <h1>Portfolio</h1>
-          <h3>Recently Completed Projects</h3>
+          <h1>Portfolio:</h1>
+          <h3>
+            <i>Recently Completed Projects</i>
+          </h3>
+        </div>
+        <div className="projecttilesflex">
+          <ScrollAnimation
+            animateIn="slideInLeft"
+            duration="1"
+            animateOut="slideOutLeft"
+          >
+            <img
+              src={require("./DreamScreenshot.png")}
+              className="projectpictiles"
+            />
+            <h2>Dream Notes</h2>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="slideInRight"
+            duration="1"
+            animateOut="slideOutRight"
+          >
+            <img
+              src={require("./QueueScreenshot.png")}
+              className="projectpictiles"
+            />
+            <h2>Student Help Queue</h2>
+          </ScrollAnimation>
         </div>
       </div>
     )
