@@ -1,19 +1,23 @@
 .window {
   height: 100vh;
   width: 100%;
-  
+
   position: relative;
   display: block;
   z-index: 33;
   color: white;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
-.topname{
+.topname {
   font-size: 88px;
   margin-bottom: -3%;
+}
+.window img {
+  margin-top: 5%;
+  max-width: 100px;
 }
