@@ -20,11 +20,13 @@ export default class Projects extends Component {
             duration="1"
             animateOut="slideOutLeft"
           >
-            <img
-              src={require("./DreamScreenshot.png")}
-              className="projectpictiles"
-            />
-            <h2>Dream Notes</h2>
+            <a href="http://dream.chriswf.com"   style={{ textDecoration: "none", color: "white" }}>
+              <img
+                src={require("./DreamScreenshot.png")}
+                className="projectpictiles" 
+              />
+              <h2>Dream Notes</h2>
+            </a>
           </ScrollAnimation>
 
           <ScrollAnimation
@@ -32,11 +34,16 @@ export default class Projects extends Component {
             duration="1"
             animateOut="slideOutDown"
           >
-            <img
-              src={require("./GiphyScreenshot.png")}
-              className="projectpictiles"
-            />
-            <h2>Giphy Search Tool (React Variant)</h2>
+            <a
+              href="http://reactgiphy.chriswf.com"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <img
+                src={require("./GiphyScreenshot.png")}
+                className="projectpictiles"
+              />
+              <h2>Giphy Search Tool (React Variant)</h2>
+            </a>
           </ScrollAnimation>
 
           <ScrollAnimation
@@ -44,11 +51,13 @@ export default class Projects extends Component {
             duration="1"
             animateOut="slideOutRight"
           >
-            <img
-              src={require("./QueueScreenshot.png")}
-              className="projectpictiles"
-            />
-            <h2>Student Help Queue</h2>
+            <a href="http://q2.devmountain.review"   style={{ textDecoration: "none", color: "white" }}>
+              <img
+                src={require("./QueueScreenshot.png")}
+                className="projectpictiles"
+              />
+              <h2>Student Help Queue</h2>
+            </a>
           </ScrollAnimation>
         </div>
       </div>
