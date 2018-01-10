@@ -6,19 +6,22 @@ import { Parallax } from "react-scroll-parallax"
 export default class AboutMe extends Component {
   render() {
     return (
-     
       <Parallax
         className="custom-class"
-     
-        offsetXMin={0}
-        offsetXMax={-5}
+        offsetYMin={-230}
+        offsetYMax={-120}
+        offsetXMin={50}
+        offsetXMax={50}
         slowerScrollRate
         tag="figure"
       >
-       <h1>Full Stack Web Developer with React library, Redux, Router, AngularJS, Node/Express, Socket.io, SQL/PostgreSQL,
-and REST experience. Transferring from an IT background into Web Development.</h1>
+        <h1 className="aboutmetext">
+          Hi, my name is Chris Foster. I'm a Full Stack Web Developer with
+          React, Redux, Router, AngularJS, Node/Express, Socket.io,
+          SQL/PostgreSQL, and RESTful API experience. I'm transferring from an
+          IT background into the exciting world of Web Development!
+        </h1>
       </Parallax>
-     
     )
   }
 }
