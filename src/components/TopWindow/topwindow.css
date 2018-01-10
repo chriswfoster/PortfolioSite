@@ -1,0 +1,8 @@
+.window {
+  height: 100vh;
+  width: 100%;
+  background-image: url("react-background.jpg");
+  position: relative;
+  display: block;
+  z-index: 33;
+}

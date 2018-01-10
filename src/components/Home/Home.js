@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
-
-
+import TopWindow from '../TopWindow/TopWindow'
+import AboutMeWindow from '../AboutMe/AboutMeWindow'
+import SkillWindow from '../SkillWindow/SkillWindow'
+import ThirdWindow from '../ThirdWindow/ThirdWindow'
 class Home extends Component {
 
 
@@ -8,8 +10,11 @@ class Home extends Component {
     render(){
         return(
             <div>
-                Hi.
-                </div>
+               <TopWindow />
+               <AboutMeWindow />
+               <SkillWindow />
+               <ThirdWindow />
+        </div>
         )
     }
 }
