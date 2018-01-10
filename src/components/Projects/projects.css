@@ -1,7 +1,7 @@
 .thirdwindow {
-  height: 90vh;
+  height: auto;
   width: 100%;
-  
+
   color: white;
   position: relative;
   display: block;

@@ -1,8 +1,8 @@
 .contactbackground {
-  background-color: black;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   color: white;
+  margin-bottom: 50px;
 }
 .underlinebox {
   display: block;
@@ -30,11 +30,9 @@
   font-size: 80px;
 }
 
-
 .fa-linkedin {
-  background: #000000;
   height: 58px;
 }
 .fa-github {
- height: 60px;
+  height: 60px;
 }

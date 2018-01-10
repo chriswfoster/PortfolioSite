@@ -1,5 +1,5 @@
 .secondwindow {
-  height: 120vh;
+  height: auto;
   width: 100%;
   background-color: rgb(255, 247, 235);
   position: relative;
@@ -25,4 +25,8 @@
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   margin: 50px;
+}
+@media screen and (max-width: 850px) {
+  .secondwindow {
+  }
 }
