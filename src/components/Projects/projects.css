@@ -36,13 +36,14 @@
 }
 
 .projectpictiles {
-  max-height: 200px;
+  max-height: 30vh;
 }
 .projectpictiles:hover {
   border-style: solid;
   border-color: rgb(25, 0, 255);
 }
 .projecttilesflex {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
