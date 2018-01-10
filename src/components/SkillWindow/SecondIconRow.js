@@ -15,11 +15,26 @@ export default class SecondIconRow extends Component {
           tag="figure"
         >
           <div className="iconrowflex">
-            <img src={require("./icons/javascript-icon.png")} />
-            <img src={require("./icons/massive-icon.jpg")} />
-            <img src={require("./icons/Momentjs-icon.png")} />
-            <img src={require("./icons/nginx-icon.png")} />
-            <img src={require("./icons/node-icon.png")} />
+            <div>
+              <img src={require("./icons/javascript-icon.png")} />
+              <p>Javascript</p>
+            </div>
+            <div>
+              <img src={require("./icons/massive-icon.jpg")} />
+              <p>Massive</p>
+            </div>
+            <div>
+              <img src={require("./icons/Momentjs-icon.png")} />
+              <p>Moment.js</p>
+            </div>
+            <div>
+              <img src={require("./icons/nginx-icon.png")} />
+              <p>NGiNX</p>
+            </div>
+            <div>
+              <img src={require("./icons/node-icon.png")} />
+              <p>Node.js</p>
+            </div>
           </div>
         </Parallax>
       </div>

@@ -15,14 +15,27 @@ export default class FirstIconRow extends Component {
           tag="figure"
         >
           <div className="iconrowflex">
-            <img src={require("./icons/angularjs-icon.png")} />
-            <img
-              src={require("./icons/apache-icon.svg")}
-              className="rotate270"
-            />
-            <img src={require("./icons/css-icon.svg")} />
-            <img src={require("./icons/express-icon.png")} />
-            <img src={require("./icons/html5-icon.png")} />
+            <div>
+              <img
+                src={require("./icons/angularjs-icon.png")}
+                alt="AngularJS"
+              /><p>AngularJS</p>
+            </div>
+            <div>
+              <img
+                src={require("./icons/apache-icon.svg")}
+               
+              /><p>Apache2/Httpd</p>
+            </div>
+            <div>
+              <img src={require("./icons/css-icon.svg")} /><p>CSS</p>
+            </div>
+            <div>
+              <img src={require("./icons/express-icon.png")} /><p>Express</p>
+            </div>
+            <div>
+              <img src={require("./icons/html5-icon.png")} /><p>HTML 5</p>
+            </div>
           </div>
         </Parallax>
       </div>

@@ -1,0 +1,9 @@
+.backgroundimage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("react-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -3;
+  }

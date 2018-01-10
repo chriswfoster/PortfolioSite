@@ -15,11 +15,11 @@ export default class ThirdIconRow extends Component {
           tag="figure"
         >
           <div className="iconrowflex">
-            <img src={require("./icons/postgresql-icon.png")} />
-            <img src={require("./icons/react-router-icon.svg")} />
-            <img src={require("./icons/reactjs-icon.png")} />
-            <img src={require("./icons/redux-icon.png")} />
-            <img src={require("./icons/socketio-icon.gif")} />
+           <div> <img src={require("./icons/postgresql-icon.png")} /><p>PostgreSQL</p></div>
+            <div><img src={require("./icons/react-router-icon.svg")} /><p>React-Router</p></div>
+            <div><img src={require("./icons/reactjs-icon.png")} /><p>React.js</p></div>
+            <div><img src={require("./icons/redux-icon.png")} /><p>React-Redux</p></div>
+            <div><img src={require("./icons/socketio-icon.gif")} /><p>Socket.io</p></div>
           </div>
         </Parallax>
       </div>

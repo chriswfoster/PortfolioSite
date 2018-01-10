@@ -10,8 +10,9 @@ export default class TopWindow extends Component {
     render(){
         return(
             <div className="window">
-            
-                Stuff
+            <div>
+        <p className="topname">Chris Foster</p>
+        <p>FULL STACK WEB DEVELOPER</p></div>
                 </div>
         )
     }
