@@ -48,10 +48,10 @@ class Home extends Component {
           <div className="navflex">
             <div onClick={() => this.goToAboutMe()}>About Me</div>
 
-            <div onClick={() => this.goToProjects()}>To the Projects!</div>
+            <div onClick={() => this.goToProjects()}>My Projects</div>
 
-            <div onClick={() => this.goToSkills()}>Some of my skillset!</div>
-            <div onClick={() => scroll.scrollToBottom()}> CONTACT </div>
+            <div onClick={() => this.goToSkills()}>Some of my skillset</div>
+            <div onClick={() => scroll.scrollToBottom()}> Contact </div>
           </div>
         </div>
 
