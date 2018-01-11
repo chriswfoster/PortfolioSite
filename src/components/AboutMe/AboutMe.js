@@ -9,7 +9,7 @@ export default class AboutMe extends Component {
       <Parallax
         className="custom-class"
         offsetYMin={40}
-        offsetYMax={-35}
+        offsetYMax={-5}
         offsetXMin={0}
         offsetXMax={0}
         slowerScrollRate

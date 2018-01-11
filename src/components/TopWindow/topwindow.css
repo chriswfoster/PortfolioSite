@@ -20,4 +20,10 @@
 .window img {
   margin-top: 5%;
   max-width: 100px;
+  border-radius: 553px;
+}
+.window img:hover {
+  background-color: rgba(59, 154, 218, 0.253);
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.274);
 }
