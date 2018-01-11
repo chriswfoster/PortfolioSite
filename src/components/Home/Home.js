@@ -50,7 +50,7 @@ class Home extends Component {
 
             <div onClick={() => this.goToProjects()}>My Projects</div>
 
-            <div onClick={() => this.goToSkills()}>Some of my skillset</div>
+            <div onClick={() => this.goToSkills()}>Some of my Skillset</div>
             <div onClick={() => scroll.scrollToBottom()}> Contact </div>
           </div>
         </div>
