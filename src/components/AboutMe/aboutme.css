@@ -1,5 +1,6 @@
 .aboutmewindow {
-  height: 98vh;
+  min-height: 98vh;
+  height: auto;
   width: 100%;
   background-color: rgb(131, 176, 184);
   position: relative;
@@ -8,7 +9,8 @@
 }
 
 .aboutmeprofilepic {
-  max-height: 70vh;
+  
+  width: 40%;
   border-radius: 553px;
 
   margin-left: 5%;
@@ -23,9 +25,20 @@
   align-content: stretch;
 }
 
+.aboutmeorganizer {
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  position: absolute;
+}
+
 .aboutmetext {
   margin-top: 5%;
   max-width: 40%;
-
   margin-right: 10%;
+  min-width: 295px;
 }

@@ -6,15 +6,7 @@ import { Parallax } from "react-scroll-parallax"
 export default class AboutMe extends Component {
   render() {
     return (
-      <Parallax
-        className="custom-class"
-        offsetYMin={40}
-        offsetYMax={-5}
-        offsetXMin={0}
-        offsetXMax={0}
-        slowerScrollRate
-        tag="figure"
-      >
+      <div className="aboutmeorganizer">
         <div className="aboutmeflex">
           <img src={require("./linkedin.jpg")} className="aboutmeprofilepic" />
           <h1 className="aboutmetext">
@@ -23,8 +15,9 @@ export default class AboutMe extends Component {
             SQL/PostgreSQL, and RESTful API experience. I'm transferring from an
             IT background into the exciting world of Web Development!
           </h1>
+          </div>
         </div>
-      </Parallax>
+     
     )
   }
 }

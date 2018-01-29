@@ -6,6 +6,7 @@
   background-size: 100% 100%;
   position: fixed;
   z-index: -3;
+  overflow: hidden;
 }
 .navbarbox {
   width: 100%;
@@ -40,4 +41,12 @@
 }
 .navflex div:hover {
   color: blue;
+}
+
+@media screen and (max-width: 1024px) {
+  .backgroundimage {
+    background-image: none;
+    background-color: rgb(39, 39, 39);
+  }
+
 }

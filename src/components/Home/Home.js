@@ -42,7 +42,7 @@ class Home extends Component {
     var Scroll = require("react-scroll")
     var scroll = Scroll.animateScroll
     return (
-      <div>
+      <div clasName="homeoverflow">
         <div className="navbarbox">
           <img src={require("../AboutMe/linkedin.jpg")} />
           <div className="navflex">
