@@ -16,9 +16,9 @@ export default class Projects extends Component {
         </div>
         <div className="projecttilesflex">
           <ScrollAnimation
-            animateIn="slideInLeft"
-            duration="1"
-            animateOut="slideOutLeft"
+            animateIn="zoomIn"
+            duration=".25"
+            animateOut="zoomOut"
           >
             <a
               href="http://dream.chriswf.com"
@@ -34,9 +34,10 @@ export default class Projects extends Component {
           </ScrollAnimation>
 
           <ScrollAnimation
-            animateIn="slideInUp"
-            duration="1"
-            animateOut="slideOutDown"
+            animateIn="zoomIn"
+            delay="400"
+            duration=".25"
+            animateOut="zoomOut"
           >
             <a
               href="http://reactgiphy.chriswf.com"
@@ -52,9 +53,10 @@ export default class Projects extends Component {
           </ScrollAnimation>
 
           <ScrollAnimation
-            animateIn="slideInRight"
-            duration="1"
-            animateOut="slideOutRight"
+            animateIn="zoomIn"
+            duration=".25"
+            delay="800"
+            animateOut="zoomOut"
           >
             <a
               href="http://q2.devmountain.review"

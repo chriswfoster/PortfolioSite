@@ -13,12 +13,26 @@ export default class SecondWindow extends Component {
         <h1> SKILLS: <br />
         <br /></h1>
         
+<div className="skillresponsivedisplay">
+<p>
+Javascript | Massive | Moment.js | NGiNX | Node.js
+  </p>
+  <p>
+  AngularJS | Apache2/Httpd | React.js | CSS | Express | HTML5
+    </p>
+    <p>
+    PostgreSQL | MySQL/MariaDB | React-Router | React-Redux | Socket.io
+      </p>
+  </div>
 
-        <ParallaxProvider>
+
+<div className="skillparallaxdisplay">
+        <ParallaxProvider >
           <FirstIconRow />
           <SecondIconRow />
           <ThirdIconRow />
         </ParallaxProvider>
+     </div>
       </div>
     )
   }

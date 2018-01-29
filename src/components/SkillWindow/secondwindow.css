@@ -1,9 +1,15 @@
 .secondwindow {
-  height: auto;
+  height: 95vh;
   width: 100%;
   background-color: rgb(255, 247, 235);
   position: relative;
   display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
 .iconrowflex {
   display: flex;
@@ -12,7 +18,7 @@
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .iconrowflex img {
@@ -26,7 +32,25 @@
   transform: rotate(270deg);
   margin: 50px;
 }
+
+.skillparallaxdisplay {
+
+  height: auto;
+  width: 100vw;
+}
+.skillresponsivedisplay {
+  margin-bottom: 5%;
+  display: none;
+}
+
 @media screen and (max-width: 850px) {
+  .skillparallaxdisplay {
+    visibility: hidden;
+  }
+  .skillresponsivedisplay {
+    visibility: visible;
+  }
   .secondwindow {
+    height: auto;
   }
 }

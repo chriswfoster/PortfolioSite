@@ -19,12 +19,13 @@ export default class FirstIconRow extends Component {
               <img
                 src={require("./icons/angularjs-icon.png")}
                 alt="AngularJS"
+             
               /><p>AngularJS</p>
             </div>
             <div>
               <img
                 src={require("./icons/apache-icon.svg")}
-               
+             
               /><p>Apache2/Httpd</p>
             </div>
             <div>
