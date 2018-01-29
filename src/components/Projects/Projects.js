@@ -22,7 +22,8 @@ export default class Projects extends Component {
           >
             <a
               href="http://dream.chriswf.com"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none"}}
+              className="projectlinks"
             >
               <img
                 src={require("./DreamScreenshot.png")}
@@ -39,7 +40,8 @@ export default class Projects extends Component {
           >
             <a
               href="http://reactgiphy.chriswf.com"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none",}}
+              className="projectlinks"
             >
               <img
                 src={require("./GiphyScreenshot.png")}
@@ -56,7 +58,8 @@ export default class Projects extends Component {
           >
             <a
               href="http://q2.devmountain.review"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none"}}
+              className="projectlinks"
             >
               <img
                 src={require("./QueueScreenshot.png")}

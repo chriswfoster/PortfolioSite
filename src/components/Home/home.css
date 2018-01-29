@@ -16,7 +16,6 @@
   position: absolute;
   z-index: 55;
   color: white;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
