@@ -10,7 +10,7 @@ export default class SecondIconRow extends Component {
         <Parallax
           className="custom-class"
           offsetXMin={0}
-          offsetXMax={-5}
+          offsetXMax={-15}
           slowerScrollRate
           tag="figure"
         >
