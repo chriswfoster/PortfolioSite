@@ -22,7 +22,7 @@ export default class Projects extends Component {
           >
             <a
               href="http://dream.chriswf.com"
-              style={{ textDecoration: "none"}}
+              style={{ textDecoration: "none" }}
               className="projectlinks"
             >
               <img
@@ -41,7 +41,7 @@ export default class Projects extends Component {
           >
             <a
               href="http://reactgiphy.chriswf.com"
-              style={{ textDecoration: "none",}}
+              style={{ textDecoration: "none" }}
               className="projectlinks"
             >
               <img
@@ -59,8 +59,8 @@ export default class Projects extends Component {
             animateOut="zoomOut"
           >
             <a
-              href="http://q2.devmountain.review"
-              style={{ textDecoration: "none"}}
+              href="https://www.youtube.com/watch?v=xsKCZNNVW8o&feature=youtu.be"
+              style={{ textDecoration: "none" }}
               className="projectlinks"
             >
               <img
