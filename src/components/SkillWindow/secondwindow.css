@@ -29,7 +29,10 @@
 }
 
 .iconrowflex img {
-  max-height: 100px;
+  max-height: 6vw;
+}
+.iconrowflex div p {
+  font-size: 1.5vw;
 }
 .rotate270 {
   -webkit-transform: rotate(270deg);
@@ -60,7 +63,7 @@
   margin-left: 0px !important;
 }
 @media screen and (max-width: 850px) {
-  .skillparallaxdisplay {
+  /* .skillparallaxdisplay {
     visibility: hidden;
     overflow-x: hidden;
   }
@@ -71,5 +74,5 @@
   .secondwindow {
     height: auto;
     overflow-x: hidden;
-  }
+  } */
 }

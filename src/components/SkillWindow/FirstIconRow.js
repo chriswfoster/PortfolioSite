@@ -8,8 +8,8 @@ export default class FirstIconRow extends Component {
     return (
       <Parallax
         className="custom-class"
-        offsetXMin={-5}
-        offsetXMax={30}
+        offsetXMin={0}
+        offsetXMax={15}
         slowerScrollRate
         tag="figure"
       >
