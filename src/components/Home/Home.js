@@ -44,7 +44,7 @@ class Home extends Component {
     return (
       <div clasName="homeoverflow">
         <div className="navbarbox">
-          <img src={require("../AboutMe/linkedin.jpg")} />
+          <img src={require("./C.png")} />
           <div className="navflex">
             <div onClick={() => this.goToAboutMe()}>About Me</div>
 
