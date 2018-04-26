@@ -15,11 +15,11 @@ export default class Contact extends Component {
         <h3>214-769-9691</h3>
 
         <div>
-          <a href="https://github.com/chriswfoster">
+          <a href="https://github.com/chriswfoster" target="_blank">
             <img className="fa-github" src={require("./github-icon.png")} />
           </a>
 
-          <a href="https://www.linkedin.com/in/chriswfoster/">
+          <a href="https://www.linkedin.com/in/chriswfoster/" target="_blank">
             <img src={require("./linkedin-icon.png")} className="fa-linkedin" />
           </a>
         </div>
