@@ -9,7 +9,6 @@
 }
 
 .aboutmeprofilepic {
-  
   width: 40%;
   border-radius: 553px;
 
@@ -40,5 +39,17 @@
   margin-top: 5%;
   max-width: 40%;
   margin-right: 10%;
-  min-width: 295px;
+  min-width: 170px;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 581px) {
+  .aboutmetext {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 380px) {
+  .aboutmetext {
+    max-width: 100%;
+  }
 }

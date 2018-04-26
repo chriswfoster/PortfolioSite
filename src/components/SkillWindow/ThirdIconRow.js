@@ -9,7 +9,7 @@ export default class ThirdIconRow extends Component {
       <Parallax
         className="custom-class"
         offsetXMin={0}
-        offsetXMax={15}
+        offsetXMax={10}
         slowerScrollRate
         tag="figure"
       >
