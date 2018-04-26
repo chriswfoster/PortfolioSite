@@ -8,8 +8,8 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll"
-
 import "./navbar.css"
+
 export default class NavBar extends Component {
   constructor() {
     super()
@@ -46,10 +46,10 @@ export default class NavBar extends Component {
   }
 
   render() {
-    var Scroll = require('react-scroll');
+    var Scroll = require("react-scroll")
     var scroll = Scroll.animateScroll
     return (
-      <div >
+      <div>
         <div>
           <Link
             activeClass="active"
@@ -95,7 +95,7 @@ export default class NavBar extends Component {
           >
             Test 2
           </button>
-<button onClick={() => scroll.scrollToBottom()}> CONTACT </button>
+          <button onClick={() => scroll.scrollToBottom()}> CONTACT </button>
           <button onClick={() => this.scrollToTop}>To the top!</button>
           <br />
           <button onClick={() => this.scrollToBottom}>To the bottom!</button>

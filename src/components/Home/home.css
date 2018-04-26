@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 .navbarbox {
-  width: 100%;
+  width: 100vw;
   height: 12vh;
   background-color: rgba(0, 0, 0, 0.637);
   float: top;
@@ -25,6 +25,7 @@
 }
 .navbarbox img {
   max-height: 12vh;
+  left: 0vw;
 }
 .navflex {
   display: flex;
@@ -37,6 +38,7 @@
 .navflex div {
   margin-right: 3vw;
   cursor: pointer;
+  font-size: 100%;
 }
 .navflex div:hover {
   color: blue;
@@ -47,5 +49,9 @@
     background-image: none;
     background-color: rgb(39, 39, 39);
   }
-
+}
+@media screen and (max-width: 555px) {
+  .navflex div {
+    font-size: 60%;
+  }
 }
