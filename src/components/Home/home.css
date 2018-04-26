@@ -24,8 +24,9 @@
   align-content: stretch;
 }
 .navbarbox img {
-  max-height: 12vh;
+  max-height: 17vh;
   left: 0vw;
+  margin-top: 2vh;
 }
 .navflex {
   display: flex;
@@ -52,6 +53,6 @@
 }
 @media screen and (max-width: 555px) {
   .navflex div {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
