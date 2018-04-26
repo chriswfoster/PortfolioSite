@@ -24,6 +24,7 @@ export default class Projects extends Component {
               href="http://dream.chriswf.com"
               style={{ textDecoration: "none" }}
               className="projectlinks"
+              target="_blank"
             >
               <img
                 src={require("./DreamScreenshot.png")}
@@ -43,6 +44,7 @@ export default class Projects extends Component {
               href="http://reactgiphy.chriswf.com"
               style={{ textDecoration: "none" }}
               className="projectlinks"
+              target="_blank"
             >
               <img
                 src={require("./GiphyScreenshot.png")}
@@ -62,6 +64,7 @@ export default class Projects extends Component {
               href="https://www.youtube.com/watch?v=xsKCZNNVW8o&feature=youtu.be"
               style={{ textDecoration: "none" }}
               className="projectlinks"
+              target="_blank"
             >
               <img
                 src={require("./QueueScreenshot.png")}
