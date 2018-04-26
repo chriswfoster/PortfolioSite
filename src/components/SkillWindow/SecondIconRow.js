@@ -6,7 +6,7 @@ import { Parallax } from "react-scroll-parallax"
 export default class SecondIconRow extends Component {
   render() {
     return (
-      <div>
+
         <Parallax
           className="custom-class"
           offsetXMin={0}
@@ -37,7 +37,7 @@ export default class SecondIconRow extends Component {
             </div>
           </div>
         </Parallax>
-      </div>
+
     )
   }
 }
