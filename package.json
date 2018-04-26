@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.6.1",
+    "cors": "^2.8.4",
     "react": "^16.2.0",
     "react-animate-on-scroll": "^1.6.2",
     "react-dom": "^16.2.0",
