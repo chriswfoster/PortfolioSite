@@ -25,7 +25,7 @@ export default class Projects extends Component {
               style={{ textDecoration: "none" }}
               className="projectlinks"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("./DreamScreenshot.png")}
@@ -46,7 +46,7 @@ export default class Projects extends Component {
               style={{ textDecoration: "none" }}
               className="projectlinks"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("./GiphyScreenshot.png")}
@@ -67,7 +67,7 @@ export default class Projects extends Component {
               style={{ textDecoration: "none" }}
               className="projectlinks"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("./QueueScreenshot.png")}
