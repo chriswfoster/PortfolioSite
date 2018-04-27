@@ -78,14 +78,14 @@ class Home extends Component {
         </div>
 
         <div className="backgroundimage"> </div>
-        <TopWindow />
+        <TopWindow scrolltotal = {this.state.total}  />
         <Element name="AboutMe" />
         <AboutMeWindow />
         <Element name="Projects" />
         <Projects />
         <Element name="Skills" />
         <SkillWindow />
-        <Contact scrolltotal = {this.state.total} />
+        <Contact />
       </div>
     )
   }

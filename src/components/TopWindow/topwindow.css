@@ -27,3 +27,16 @@
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.274);
 }
+
+.statsDisplayFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  position: absolute;
+  bottom: 0%;
+  width: 95vw;
+  left: 2.5vw;
+}
