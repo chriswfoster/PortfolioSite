@@ -7,7 +7,6 @@ import Contact from "../Contact/Contact"
 import "./home.css"
 import {
   Element,
-  animateScroll as scroll,
   scroller
 } from "react-scroll"
 class Home extends Component {
@@ -62,7 +61,7 @@ class Home extends Component {
     return (
       <div>
         <div className="navbarbox">
-          <img src={require("./C.png")} />
+          <img src={require("./C.png")}  alt="imgz"/>
           <div className="navflex">
             <div onClick={() => this.goToAboutMe()}>About Me</div>
 

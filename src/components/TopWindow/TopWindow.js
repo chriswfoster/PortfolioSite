@@ -20,7 +20,7 @@ export default class TopWindow extends Component {
           <p className="topname">Chris Foster</p>
           <p>FULL STACK WEB DEVELOPER</p>
         </div>
-        <img src={require("./arrow.png")} onClick={() => this.toAboutMe()} />
+        <img src={require("./arrow.png")} onClick={() => this.toAboutMe()} alt="imgz"/>
        
       </div>
     )

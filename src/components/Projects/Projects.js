@@ -28,7 +28,7 @@ export default class Projects extends Component {
             >
               <img
                 src={require("./DreamScreenshot.png")}
-                className="projectpictiles"
+                className="projectpictiles" alt="imgz"
               />
               <h2>Dream Notes</h2>
             </a>
@@ -48,7 +48,7 @@ export default class Projects extends Component {
             >
               <img
                 src={require("./GiphyScreenshot.png")}
-                className="projectpictiles"
+                className="projectpictiles" alt="imgz"
               />
               <h2>Giphy Search Tool (React Variant)</h2>
             </a>
@@ -68,7 +68,7 @@ export default class Projects extends Component {
             >
               <img
                 src={require("./QueueScreenshot.png")}
-                className="projectpictiles"
+                className="projectpictiles" alt="imgz"
               />
               <h2>Student Help Queue</h2>
             </a>

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "./secondwindow.css"
-import { ParallaxProvider } from "react-scroll-parallax"
 import { Parallax } from "react-scroll-parallax"
 
 export default class ThirdIconRow extends Component {
@@ -16,23 +15,23 @@ export default class ThirdIconRow extends Component {
         <div className="iconrowflex">
           <div>
             {" "}
-            <img src={require("./icons/postgresql-icon.png")} />
+            <img src={require("./icons/postgresql-icon.png")} alt="imgz"/>
             <p>PostgreSQL</p>
           </div>
           <div>
-            <img src={require("./icons/react-router-icon.svg")} />
+            <img src={require("./icons/react-router-icon.svg")} alt="imgz"/>
             <p>React-Router</p>
           </div>
           <div>
-            <img src={require("./icons/reactjs-icon.png")} />
+            <img src={require("./icons/reactjs-icon.png")} alt="imgz"/>
             <p>React.js</p>
           </div>
           <div>
-            <img src={require("./icons/redux-icon.png")} />
+            <img src={require("./icons/redux-icon.png")} alt="imgz"/>
             <p>React-Redux</p>
           </div>
           <div>
-            <img src={require("./icons/socketio-icon.gif")} />
+            <img src={require("./icons/socketio-icon.gif")} alt="imgz"/>
             <p>Socket.io</p>
           </div>
         </div>

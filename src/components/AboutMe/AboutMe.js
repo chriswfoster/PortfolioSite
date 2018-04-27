@@ -7,7 +7,7 @@ export default class AboutMe extends Component {
     return (
       <div className="aboutmeorganizer">
         <div className="aboutmeflex">
-          <img src={require("./linkedin.jpg")} className="aboutmeprofilepic" />
+          <img src={require("./linkedin.jpg")} className="aboutmeprofilepic" alt="imgz"/>
           <p className="aboutmetext">
             Hi, my name is Chris Foster. I'm a Full Stack Web Developer with
             React, Redux, Router, AngularJS, Node/Express, Socket.io,

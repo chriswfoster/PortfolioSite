@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "./secondwindow.css"
-import { ParallaxProvider } from "react-scroll-parallax"
 import { Parallax } from "react-scroll-parallax"
 
 export default class FirstIconRow extends Component {
@@ -19,19 +18,19 @@ export default class FirstIconRow extends Component {
             <p>AngularJS</p>
           </div>
           <div>
-            <img src={require("./icons/apache-icon.svg")} />
+            <img src={require("./icons/apache-icon.svg")} alt="imgz"/>
             <p>Apache2/Httpd</p>
           </div>
           <div>
-            <img src={require("./icons/css-icon.svg")} />
+            <img src={require("./icons/css-icon.svg")} alt="imgz"/>
             <p>CSS</p>
           </div>
           <div>
-            <img src={require("./icons/express-icon.png")} />
+            <img src={require("./icons/express-icon.png")} alt="imgz"/>
             <p>Express</p>
           </div>
           <div>
-            <img src={require("./icons/html5-icon.png")} />
+            <img src={require("./icons/html5-icon.png")} alt="imgz"/>
             <p>HTML 5</p>
           </div>
         </div>
