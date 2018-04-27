@@ -16,6 +16,14 @@ import {
   scroller
 } from "react-scroll"
 class Home extends Component {
+  constructor() {
+    super()
+    this.state = {
+      previous: 0,
+      total: 0
+    }
+  }
+
   goToAboutMe() {
     scroller.scrollTo("AboutMe", {
       duration: 1500,
@@ -38,7 +46,21 @@ class Home extends Component {
       smooth: true
     })
   }
+
+  scroller() {
+    this.state.previous === 0
+      ? this.setState({ previous: window.pageYOffset })
+      : null
+    let current = window.pageYOffset
+    const { previous } = this.state
+    let total = this.state.total
+    total += previous > current ? previous - current : current - previous
+    this.setState({ previous: current, total })
+  }
+
   render() {
+    window.onscroll = () => this.scroller()
+
     var Scroll = require("react-scroll")
     var scroll = Scroll.animateScroll
     return (
@@ -63,7 +85,7 @@ class Home extends Component {
         <Projects />
         <Element name="Skills" />
         <SkillWindow />
-        <Contact />
+        <Contact scrolltotal = {this.state.total} />
       </div>
     )
   }
