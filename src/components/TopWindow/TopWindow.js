@@ -27,9 +27,7 @@ export default class TopWindow extends Component {
           <p>FULL STACK WEB DEVELOPER</p>
         </div>
         <img src={require("./arrow.png")} onClick={() => this.toAboutMe()} />
-        <div className="statsDisplayFlex">
-          <p>You scrolled a total of {this.props.scrolltotal} pixels!</p>
-        </div>
+       
       </div>
     )
   }

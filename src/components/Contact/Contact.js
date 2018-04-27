@@ -23,6 +23,9 @@ export default class Contact extends Component {
             <img src={require("./linkedin-icon.png")} className="fa-linkedin" />
           </a>
         </div>
+        <div className="statsDisplayFlex">
+          <p>You scrolled a total of {this.props.scrolltotal} pixels!</p>
+        </div>
       </div>
     )
   }
