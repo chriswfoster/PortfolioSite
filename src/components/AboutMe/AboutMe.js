@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import "./aboutme.css"
-import { ParallaxProvider } from "react-scroll-parallax"
-import { Parallax } from "react-scroll-parallax"
+
 
 export default class AboutMe extends Component {
   render() {

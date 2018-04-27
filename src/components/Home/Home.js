@@ -4,15 +4,10 @@ import AboutMeWindow from "../AboutMe/AboutMeWindow"
 import SkillWindow from "../SkillWindow/SkillWindow"
 import Projects from "../Projects/Projects"
 import Contact from "../Contact/Contact"
-import NavBar from "../NavBar/NavBar"
 import "./home.css"
 import {
-  Link,
-  DirectLink,
   Element,
-  Events,
   animateScroll as scroll,
-  scrollSpy,
   scroller
 } from "react-scroll"
 class Home extends Component {
