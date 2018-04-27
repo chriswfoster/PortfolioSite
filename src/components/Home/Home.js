@@ -43,9 +43,10 @@ class Home extends Component {
   }
 
   scroller() {
-    this.state.previous === 0
-      ? this.setState({ previous: window.pageYOffset })
-      : null
+    if (this.state.previous === 0){
+      this.setState({ previous: window.pageYOffset })
+    }
+  
     let current = window.pageYOffset
     const { previous } = this.state
     let total = this.state.total
