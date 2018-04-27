@@ -20,7 +20,6 @@ export default class TopWindow extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="window">
         <div>
@@ -30,7 +29,6 @@ export default class TopWindow extends Component {
         <img src={require("./arrow.png")} onClick={() => this.toAboutMe()} />
         <div className="statsDisplayFlex">
           <p>You scrolled a total of {this.props.scrolltotal} pixels!</p>
-          <p>Mouse movement in Pixels: 0</p>
         </div>
       </div>
     )

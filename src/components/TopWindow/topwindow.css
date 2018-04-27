@@ -30,12 +30,11 @@
 
 .statsDisplayFlex {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch;
-  position: absolute;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
   bottom: 0%;
   width: 95vw;
   left: 2.5vw;

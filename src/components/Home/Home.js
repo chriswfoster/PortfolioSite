@@ -20,7 +20,12 @@ class Home extends Component {
     super()
     this.state = {
       previous: 0,
-      total: 0
+      total: 0,
+      mouseXPrevious: 0,
+      mouseYPrevious: 0,
+      mouseXTotal: 0,
+      mouseYTotal: 0,
+      overallTotal: 0
     }
   }
 
@@ -58,8 +63,40 @@ class Home extends Component {
     this.setState({ previous: current, total })
   }
 
+  mouseTracker(e) {
+    this.state.mouseXPrevious === 0
+      ? this.setState({ mouseXPrevious: e.clientX })
+      : null
+    this.state.mouseYPrevious === 0
+      ? this.setState({ mouseYPrevious: e.clientY })
+      : null
+
+    let currentX = e.clientX
+    let currentY = e.clientY
+    const { mouseXPrevious, mouseYPrevious } = this.state
+    let totalX = this.state.mouseXTotal
+    let totalY = this.state.mouseYTotal
+    totalX +=
+      mouseXPrevious > currentX
+        ? mouseXPrevious - currentX
+        : currentX - mouseXPrevious
+    totalY +=
+      mouseYPrevious > currentY
+        ? mouseYPrevious - currentY
+        : currentY - mouseYPrevious
+    this.setState({
+      mouseXTotal: totalX,
+      mouseYTotal: totalY,
+      overallTotal: Math.floor((totalY + totalX) / 15500)
+    })
+
+  }
+
   render() {
     window.onscroll = () => this.scroller()
+    // window.onmousemove = e => this.mouseTracker(e)
+
+
 
     var Scroll = require("react-scroll")
     var scroll = Scroll.animateScroll
@@ -78,7 +115,7 @@ class Home extends Component {
         </div>
 
         <div className="backgroundimage"> </div>
-        <TopWindow scrolltotal = {this.state.total}  />
+        <TopWindow scrolltotal={this.state.total} mousetotal={this.state.overallTotal} />
         <Element name="AboutMe" />
         <AboutMeWindow />
         <Element name="Projects" />
