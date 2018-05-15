@@ -41,7 +41,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div style={{width: "100vw"}}>
+      <div style={{ width: "100vw" }}>
         <form onSubmit={e => this.submitter(e)} className="contactFormFlex">
           <div>
             <p>NAME:</p>
@@ -59,26 +59,30 @@ class ContactForm extends Component {
               onChange={e => this.handleText(e, "email")}
             />
           </div>
-          <div>
+          <div style={{ marginTop: "5vh" }}>
             <p>MESSAGE:</p>
             <textarea
+              style={{ height: "10vh", marginTop: "5vh;" }}
               type="text"
               placeholder="Type me a message"
               onChange={e => this.handleText(e, "message")}
             />
           </div>
-          <div>
-            <input
-              type="submit"
-              value="SEND MESSAGE"
-              disabled={this.state.submitStatus}
-            />
+          {this.state.submitStatus === "true" ? (
             <ReCAPTCHA
+              style={{ marginLeft: "10vw", marginTop: "5vh" }}
               ref="recaptcha"
               sitekey={process.env.REACT_APP_KEY}
               onChange={this.captchaHandler}
             />
-          </div>
+          ) : (
+            <input
+              style={{ width: "20%", marginLeft: "40%", marginTop: "5vh" }}
+              type="submit"
+              value="SEND MESSAGE"
+              disabled={this.state.submitStatus}
+            />
+          )}
         </form>
       </div>
     )

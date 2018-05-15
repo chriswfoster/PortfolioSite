@@ -40,18 +40,48 @@
 /* ------------ HERE IS CONTACT FORM CSS ---------------- */
 
 .contactFormFlex {
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: stretch;
-  align-content: stretch;
-  width: 100%;
+  align-content: center;
+  margin-left: 30vw;
+  width: 40vw;
+  height: auto;
+  background-color: rgb(255, 247, 235);
+  color: black;
+  border-radius: 12px;
+  padding-bottom: 5vh;
+  padding-top: 10vh;
 }
 .contactFormFlex div {
-  width: 100%;
-  display: inline;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  position: relative;
 }
 .contactFormFlex div p {
-  display: inline;
+  margin-left: 10vw;
+  margin-right: 0vw;
+}
+.contactFormFlex div input {
+  position: absolute;
+  border: 1px solid black;
+  left: 60%;
+  height: 2vh;
+}
+.contactFormFlex div textarea {
+  position: absolute;
+  border: 1px solid black;
+  left: 60%;
+  height: 3vh;
+  width: 50%;
+  margin-bottom: 10%;
+  resize: none;
 }
