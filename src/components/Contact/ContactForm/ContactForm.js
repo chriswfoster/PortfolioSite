@@ -70,7 +70,8 @@ class ContactForm extends Component {
           </div>
           {this.state.submitStatus === "true" ? (
             <ReCAPTCHA
-              style={{ marginLeft: "10vw", marginTop: "5vh" }}
+              style={{ marginLeft: "50%", marginTop: "5vh" }}
+              size="compact"
               ref="recaptcha"
               sitekey={process.env.REACT_APP_KEY}
               onChange={this.captchaHandler}
