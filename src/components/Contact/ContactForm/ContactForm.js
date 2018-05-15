@@ -7,8 +7,6 @@ class ContactForm extends Component {
     super()
     this.state = {
       name: "",
-      company: "",
-      phoneNumber: "",
       email: "",
       message: "",
       submitStatus: "true"
@@ -29,39 +27,45 @@ class ContactForm extends Component {
 
   submitter(e) {
     e.preventDefault()
+    axios
+      .post("/api/sendEmail", {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      })
+      .then(response => console.log(response))
+    e.target.reset()
     console.log("submitted")
     this.setState({ submitStatus: "true" })
   }
+
   render() {
     return (
       <div>
         <form onSubmit={e => this.submitter(e)}>
+          <p>NAME:</p>
           <input
             type="text"
             placeholder="Name"
             onChange={e => this.handleText(e, "name")}
           />
-          <input
-            type="text"
-            placeholder="Company (optional)"
-            onChange={e => this.handleText(e, "company")}
-          />
-          <input
-            type="text"
-            placeholder="Phone number"
-            onChange={e => this.handleText(e, "phoneNumber")}
-          />
+          <p>EMAIL:</p>
           <input
             type="text"
             placeholder="Email"
             onChange={e => this.handleText(e, "email")}
           />
+          <p>MESSAGE:</p>
           <textarea
             type="text"
             placeholder="Type me a message"
             onChange={e => this.handleText(e, "message")}
           />
-          <input type="submit" text="test" disabled={this.state.submitStatus} />
+          <input
+            type="submit"
+            value="SEND MESSAGE"
+            disabled={this.state.submitStatus}
+          />
           <ReCAPTCHA
             ref="recaptcha"
             sitekey={process.env.REACT_APP_KEY}

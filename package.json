@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
+    "gmail-send": "^1.2.14",
     "react": "^16.2.0",
     "react-animate-on-scroll": "^1.6.2",
     "react-async-script": "^0.9.1",
