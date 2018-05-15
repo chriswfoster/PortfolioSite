@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import ContactForm from './ContactForm/ContactForm'
 import "./contact.css"
 
 export default class Contact extends Component {
@@ -11,6 +11,8 @@ export default class Contact extends Component {
           <h1> CONTACT </h1>
           <div className="underlinebox" />
         </div>
+      <ContactForm />
+
         <h3>chriswfoster@gmail.com</h3>
         <h3>214-769-9691</h3>
 
