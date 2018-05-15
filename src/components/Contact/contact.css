@@ -38,3 +38,20 @@
 }
 
 /* ------------ HERE IS CONTACT FORM CSS ---------------- */
+
+.contactFormFlex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+}
+.contactFormFlex div {
+  width: 100%;
+  display: inline;
+}
+.contactFormFlex div p {
+  display: inline;
+}

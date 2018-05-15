@@ -41,36 +41,44 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={e => this.submitter(e)}>
-          <p>NAME:</p>
-          <input
-            type="text"
-            placeholder="Name"
-            onChange={e => this.handleText(e, "name")}
-          />
-          <p>EMAIL:</p>
-          <input
-            type="text"
-            placeholder="Email"
-            onChange={e => this.handleText(e, "email")}
-          />
-          <p>MESSAGE:</p>
-          <textarea
-            type="text"
-            placeholder="Type me a message"
-            onChange={e => this.handleText(e, "message")}
-          />
-          <input
-            type="submit"
-            value="SEND MESSAGE"
-            disabled={this.state.submitStatus}
-          />
-          <ReCAPTCHA
-            ref="recaptcha"
-            sitekey={process.env.REACT_APP_KEY}
-            onChange={this.captchaHandler}
-          />
+      <div style={{width: "100vw"}}>
+        <form onSubmit={e => this.submitter(e)} className="contactFormFlex">
+          <div>
+            <p>NAME:</p>
+            <input
+              type="text"
+              placeholder="Name"
+              onChange={e => this.handleText(e, "name")}
+            />
+          </div>
+          <div>
+            <p>EMAIL:</p>
+            <input
+              type="text"
+              placeholder="Email"
+              onChange={e => this.handleText(e, "email")}
+            />
+          </div>
+          <div>
+            <p>MESSAGE:</p>
+            <textarea
+              type="text"
+              placeholder="Type me a message"
+              onChange={e => this.handleText(e, "message")}
+            />
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              disabled={this.state.submitStatus}
+            />
+            <ReCAPTCHA
+              ref="recaptcha"
+              sitekey={process.env.REACT_APP_KEY}
+              onChange={this.captchaHandler}
+            />
+          </div>
         </form>
       </div>
     )
